@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    color:yellow;
+   }
+
+header p{
+   display: flex;
+   font-size: 2rem;
+   color:#ccc;
+   justify-content: center;
+}
+header h1, header p{
+    transition: 0.3s;
+}
+
+h1:hover{
+   text-shadow:0 0 20px #fff; 
+}
+ p:hover{
+    text-shadow: 20px 10px 20px yellow;
+ }
