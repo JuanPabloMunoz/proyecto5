@@ -1,14 +1,16 @@
 import { Header } from "../../components/Header/Header";
 import { Card } from "../../components/Card/Card";
 import { getAllMovies } from "../../Hooks/fetchMovies";
-import { useEffect, useState } from "react";
-
+import { Suspense, useEffect, useState } from "react";
 import './MoviesList.css';
+
+
 
 
 export const MoviesList =()=>{
 
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
   
   useEffect(()=>{
     const getMovies = async ()=>{
@@ -25,6 +27,7 @@ export const MoviesList =()=>{
           };
         });
         setMovies(moviesData);
+        setLoading(false);
       }catch(error){
         console.error('Error, no encontramos la pelicula:', error);
       }
@@ -44,6 +47,7 @@ export const MoviesList =()=>{
 
            
            <div className="moviesListContainer">
+            {loading && <h1>Cargando...</h1>}
            {movies.map((movie,index) =>(
             <Card 
             key={index} 
@@ -51,16 +55,15 @@ export const MoviesList =()=>{
             imageUrl={movie.imageUrl}
             year={movie.year}
             imbdLink={movie.imbdLink}
+            
             />
             
            ))}
            </div>
 
+
+
         </>
 
     );
-}
-
-
-
-//imbdLink={movie.imbdLink}
+};
