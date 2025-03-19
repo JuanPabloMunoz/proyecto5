@@ -6,3 +6,24 @@
     padding:1rem
 
 }
+
+.moviesListContainer h1{
+    display: block;
+    justify-content: center;
+    color:rgba(255, 123, 0, 0.951);
+    width: 11ch;
+    
+    animation: typing 1s steps(11),
+    blink .5s infinite step-end alternate;
+    overflow:hidden;
+}
+
+
+@keyframes typing {
+    from{width: 0;}
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
+
+}
