@@ -1,8 +1,7 @@
 import './Card.css';
 
 
-//export const Card =({digimon})=>{ 
-  export const Card =(props)=>{ 
+ export const Card =(props)=>{ 
     
 
     return(
@@ -20,4 +19,3 @@ import './Card.css';
     )
 }
 
-//<a href={props.imbdLink} target="_blank">View on</a>

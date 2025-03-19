@@ -2,8 +2,11 @@ import { Header } from "../../components/Header/Header";
 import { Card } from "../../components/Card/Card";
 import { getAllMovies } from "../../Hooks/fetchMovies";
 import { Suspense, useEffect, useState } from "react";
-import './MoviesList.css';
+import { ErrorBoundary } from "react-error-boundary";
+import { ErrorFallback } from "../../components/Error/ErrorFallBack";
 
+
+import './MoviesList.css';
 
 
 
@@ -23,7 +26,7 @@ export const MoviesList =()=>{
             imageUrl: entity.primaryImage?.url,
             year: entity.releaseDate?.year,
             imbdLink: `https://www.imdb.com/title/${entity.id}`,
-            
+
           };
         });
         setMovies(moviesData);
@@ -38,32 +41,35 @@ export const MoviesList =()=>{
   
 
 
-           
-    return(
+    
+    return(  
+      
         <>
+          
         <Header 
          title='Listado de Peliculas' 
          subtitle='Juntos gobernaremos la galaxia...'/>
 
-           
-           <div className="moviesListContainer">
+          <div className="moviesListContainer">
             {loading && <h1>Cargando...</h1>}
            {movies.map((movie,index) =>(
+          
+          <ErrorBoundary FallbackComponent={ErrorFallback}>   
             <Card 
             key={index} 
             title={movie.title}
             imageUrl={movie.imageUrl}
             year={movie.year}
             imbdLink={movie.imbdLink}
-            
-            />
-            
-           ))}
+            /> 
+           </ErrorBoundary>
+           ))}  
            </div>
-
-
+           
+          
 
         </>
-
+       
     );
+    
 };

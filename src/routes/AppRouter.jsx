@@ -4,13 +4,14 @@ import { Home } from "../pages/Home/Home"
 import { About} from "../pages/About/About";
 import { MoviesList } from "../pages/MoviesList/MoviesList";
 import { NotFound } from "../pages/NotFound/NotFound";
-import { lazy, Suspense } from "react";
+
 
 
 
 export const AppRouter =()=>{
     return(
         <>
+       
         <BasicExample />
         <Routes>
             <Route path='/' element={<Home />}/>
