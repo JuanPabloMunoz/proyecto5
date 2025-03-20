@@ -4,15 +4,15 @@ import './About.css'
 
 
 export const About = ()=>{
-    return(
-        <>
-          <Header 
-            title='Sobre Nosotros...' 
-            subtitle='Soluciones Informaticas, nos adaptamos a vuestras necesidades.'/>
+  return(
+    <>
+      <Header 
+        title='Sobre Nosotros...' 
+        subtitle='Soluciones Informaticas, nos adaptamos a vuestras necesidades.'/>
 
-             <div className="banner-about">
-                    <img src={Banner} alt="about"/>
-             </div>
-        </>
-    )
+        <div className="banner-about">
+        <img src={Banner} alt="about"/>
+      </div>
+    </>
+  )
 }

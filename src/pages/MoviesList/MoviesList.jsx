@@ -2,11 +2,8 @@ import { Header } from "../../components/Header/Header";
 import { Card } from "../../components/Card/Card";
 import { getAllMovies } from "../../Hooks/fetchMovies";
 import { Suspense, useEffect, useState } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import { ErrorFallback } from "../../components/Error/ErrorFallBack";
-
-
 import './MoviesList.css';
+
 
 
 
@@ -43,32 +40,25 @@ export const MoviesList =()=>{
 
     
     return(  
-      
-        <>
-          
+      <>
         <Header 
-         title='Listado de Peliculas' 
-         subtitle='Juntos gobernaremos la galaxia...'/>
+        title='Listado de Peliculas' 
+        subtitle='Juntos gobernaremos la galaxia...'/>
 
-          <div className="moviesListContainer">
-            {loading && <h1>Cargando...</h1>}
-           {movies.map((movie,index) =>(
-          
-          <ErrorBoundary FallbackComponent={ErrorFallback}>   
-            <Card 
-            key={index} 
-            title={movie.title}
-            imageUrl={movie.imageUrl}
-            year={movie.year}
-            imbdLink={movie.imbdLink}
-            /> 
-           </ErrorBoundary>
-           ))}  
-           </div>
-           
-          
-
-        </>
+        <div className="moviesListContainer">
+          {loading && <h1>Cargando...</h1>}
+          {movies.map((movie,index) =>(
+                   
+          <Card 
+          key={index} 
+          title={movie.title}
+          imageUrl={movie.imageUrl}
+          year={movie.year}
+          imbdLink={movie.imbdLink}
+          /> 
+          ))}  
+        </div>
+      </>
        
     );
     

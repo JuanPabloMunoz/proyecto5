@@ -12,14 +12,13 @@ export const AppRouter =()=>{
     return(
         <>
        
-        <BasicExample />
-        <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
-            <Route path='/peliculas' element={<MoviesList />}/>
-            <Route path='*' element={<NotFound />}/>
-        </Routes>
-        
+            <BasicExample />
+            <Routes>
+              <Route path='/' element={<Home />}/>
+              <Route path='/about' element={<About />}/>
+              <Route path='/peliculas' element={<MoviesList />}/>
+              <Route path='*' element={<NotFound />}/>
+            </Routes>
         </>
     )
 }
