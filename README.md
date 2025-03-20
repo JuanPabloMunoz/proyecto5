@@ -1,12 +1,26 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto se realizo con React y Vite.
+En este proyecto usamos ruteos para ver distintas páginas, consumimos una API que muestra datos de peliculas de la saga Star Wars.
+Se trabaja con captura de errores, se maneja el asincronismo con async await y Boostra, animaciones con CSS, se aplican props, etc...  es importante destacar que esta página es responsiva, se sube a este repositorio  "dist" y "public/_redirect" con lo cual el proyecto se pudo subir a Netlify desde el pc y no desde GitHub, aquí comparto el link de mí página...   https://eloquent-froyo-d59cbf.netlify.app/
+a continiuacion comparto algunas capturas de pantalla:
 
-Currently, two official plugins are available:
+# Página de Inicio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Image](https://github.com/user-attachments/assets/b51fa0af-383b-4776-b3c3-0675c1a66652)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Responsivo.
+
+![Image](https://github.com/user-attachments/assets/21e7eaa0-943c-4306-b57e-e2e3ad57ab79)
+
+
+# Consumo de API.
+
+![Image](https://github.com/user-attachments/assets/44929118-a9d8-4671-bd1c-fa63587ef10b)
+
+
+# Link con detalles y trailer de la pelicula.
+
+![Image](https://github.com/user-attachments/assets/c3a527a6-44f3-4d9d-b78e-91c50d6a5d99)
+
