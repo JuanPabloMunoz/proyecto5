@@ -22,5 +22,5 @@ a continiuacion comparto algunas capturas de pantalla:
 
 # Link con detalles y trailer de la pelicula.
 
-![Image](https://github.com/user-attachments/assets/44929118-a9d8-4671-bd1c-fa63587ef10b)
+![Image](https://github.com/user-attachments/assets/c3a527a6-44f3-4d9d-b78e-91c50d6a5d99)
 
