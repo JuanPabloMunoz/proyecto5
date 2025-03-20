@@ -3,6 +3,8 @@ import { Card } from "../../components/Card/Card";
 import { getAllMovies } from "../../Hooks/fetchMovies";
 import { Suspense, useEffect, useState } from "react";
 import './MoviesList.css';
+import { ErrorBoundary } from "react-error-boundary";
+//import { ErrorFallback } from "../../components/Error/ErrorFallBack";//error fatal con este componente
 
 
 
@@ -19,6 +21,7 @@ export const MoviesList =()=>{
     const moviesData = edges.map((edge)=>{
     const entity = edge.node.entity;
       return{
+        
        title: entity.titleText.text,
        imageUrl: entity.primaryImage?.url,
        year: entity.releaseDate?.year,
@@ -39,6 +42,7 @@ export const MoviesList =()=>{
   
   return(  
     <>
+      <ErrorBoundary>
       <Header 
       title='Listado de Peliculas' 
       subtitle='Juntos gobernaremos la galaxia...'/>
@@ -55,6 +59,7 @@ export const MoviesList =()=>{
       /> 
       ))}  
       </div>
+      </ErrorBoundary>
     </>
        
   );
