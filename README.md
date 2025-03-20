@@ -7,7 +7,13 @@ a continiuacion comparto algunas capturas de pantalla:
 
 ![Image](https://github.com/user-attachments/assets/b51fa0af-383b-4776-b3c3-0675c1a66652)
 
+
+
+
 ![Image](https://github.com/user-attachments/assets/21e7eaa0-943c-4306-b57e-e2e3ad57ab79)
+
+
+
 
 ![Image](https://github.com/user-attachments/assets/44929118-a9d8-4671-bd1c-fa63587ef10b)
 
