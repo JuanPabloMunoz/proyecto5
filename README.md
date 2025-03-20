@@ -7,20 +7,20 @@ a continiuacion comparto algunas capturas de pantalla:
 
 # Página de Inicio.
 
-![Image](https://github.com/user-attachments/assets/b51fa0af-383b-4776-b3c3-0675c1a66652)
+![Image](https://github.com/user-attachments/assets/453ad9be-443f-49c4-b228-367942beb2d3)
 
 
 # Responsivo.
 
-![Image](https://github.com/user-attachments/assets/21e7eaa0-943c-4306-b57e-e2e3ad57ab79)
+![Image](https://github.com/user-attachments/assets/4159b70d-0db5-4959-9e78-f666e5570f87)
 
 
 # Consumo de API.
 
-![Image](https://github.com/user-attachments/assets/44929118-a9d8-4671-bd1c-fa63587ef10b)
+![Image](https://github.com/user-attachments/assets/8928d65b-c0b4-4c06-ab5a-faf6657e9264)
 
 
 # Link con detalles y trailer de la pelicula.
 
-![Image](https://github.com/user-attachments/assets/c3a527a6-44f3-4d9d-b78e-91c50d6a5d99)
+![Image](https://github.com/user-attachments/assets/a867e73c-a50b-4076-8143-28877395507c)
 
