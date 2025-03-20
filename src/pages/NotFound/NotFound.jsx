@@ -6,9 +6,9 @@ export const NotFound = ()=>{
     return(
         <>
           
-             <div className="banner-error">
-                    <img src={Error} alt="error"/>
-             </div>
+            <div className="banner-error">
+                <img src={Error} alt="error"/>
+            </div>
         </>
     )
 }

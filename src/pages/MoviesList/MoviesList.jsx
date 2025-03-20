@@ -13,53 +13,50 @@ export const MoviesList =()=>{
   const [loading, setLoading] = useState(true);
   
   useEffect(()=>{
-    const getMovies = async ()=>{
-      try{
-        const edges = await getAllMovies();
-        const moviesData = edges.map((edge)=>{
-          const entity = edge.node.entity;
-          return{
-            title: entity.titleText.text,
-            imageUrl: entity.primaryImage?.url,
-            year: entity.releaseDate?.year,
-            imbdLink: `https://www.imdb.com/title/${entity.id}`,
+  const getMovies = async ()=>{
+  try{
+    const edges = await getAllMovies();
+    const moviesData = edges.map((edge)=>{
+    const entity = edge.node.entity;
+      return{
+       title: entity.titleText.text,
+       imageUrl: entity.primaryImage?.url,
+       year: entity.releaseDate?.year,
+       imbdLink: `https://www.imdb.com/title/${entity.id}`,
 
-          };
-        });
-        setMovies(moviesData);
-        setLoading(false);
-      }catch(error){
-        console.error('Error, no encontramos la pelicula:', error);
-      }
-    };
+      };
+      });
+      
+    setMovies(moviesData);
+    setLoading(false);
+  }catch(error){
+  console.error('Error, no encontramos la pelicula:', error);
+  }
+ };
     
-    getMovies();
+  getMovies();
   },[])
   
-
-
-    
-    return(  
-      <>
-        <Header 
-        title='Listado de Peliculas' 
-        subtitle='Juntos gobernaremos la galaxia...'/>
-
-        <div className="moviesListContainer">
-          {loading && <h1>Cargando...</h1>}
-          {movies.map((movie,index) =>(
-                   
-          <Card 
-          key={index} 
-          title={movie.title}
-          imageUrl={movie.imageUrl}
-          year={movie.year}
-          imbdLink={movie.imbdLink}
-          /> 
-          ))}  
-        </div>
-      </>
+  return(  
+    <>
+      <Header 
+      title='Listado de Peliculas' 
+      subtitle='Juntos gobernaremos la galaxia...'/>
+      <div className="moviesListContainer">
+      {loading && <h1>Cargando...</h1>}
+      {movies.map((movie,index) =>(
+                 
+      <Card 
+      key={index} 
+      title={movie.title}
+      imageUrl={movie.imageUrl}
+      year={movie.year}
+      imbdLink={movie.imbdLink}
+      /> 
+      ))}  
+      </div>
+    </>
        
-    );
+  );
     
 };
