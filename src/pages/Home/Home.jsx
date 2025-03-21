@@ -8,9 +8,8 @@ export const Home = ()=>{
   return(
     <>
       <Header 
-       color='info' 
        title='Star Wars Movies'
-       subtitle='"Que la fuerza te acompañe..."'/>
+       subtitle='Que la fuerza te acompañe...'/>
           
         <div className="banner-home">
         <img src={portada} alt="Portada"/>
