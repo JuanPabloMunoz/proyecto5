@@ -2,7 +2,7 @@
 
 Este proyecto se realizo con React y Vite.
 En este proyecto usamos ruteos para ver distintas páginas, consumimos una API que muestra datos de peliculas de la saga Star Wars.
-Se trabaja con captura de errores, se maneja el asincronismo con async await y Boostra, animaciones con CSS, se aplican props, etc...  es importante destacar que esta página es responsiva, se sube a este repositorio  "dist" y "public/_redirect" con lo cual el proyecto se pudo subir a Netlify desde el pc y no desde GitHub, aquí comparto el link de mí página...   https://eloquent-froyo-d59cbf.netlify.app/
+Se trabaja con captura de errores, se maneja el asincronismo con async await y Boostra, animaciones con CSS, se aplican props, etc...  es importante destacar que esta página es responsiva, se sube a este repositorio  "dist" y "public/_redirect" con lo cual el proyecto se pudo subir a Netlify desde el pc y no desde GitHub, aquí comparto el link de mí página...   https://starwar2025.netlify.app/
 a continiuacion comparto algunas capturas de pantalla:
 
 # Página de Inicio.
