@@ -1,9 +1,10 @@
-const URL_BASE = 'https://imdb8.p.rapidapi.com/v2/search?searchTerm=star%20wars&type=move%7Cseries&first=20&country=US&language=en-US';
+const URL_BASE='https://imdb8.p.rapidapi.com/v2/search?searchTerm=star%20wars&type=move%7Cseries&first=20&country=US&language=en-US'
+
 const options = {
 	method: 'GET',
 	headers: {
 		'x-rapidapi-key': 'f70447f694msh2a468be5e40a3c5p1e38a6jsn8b6854f78864',
-		'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+    'x-rapidapi-host': 'imdb8.p.rapidapi.com'
 	}
 };
 
